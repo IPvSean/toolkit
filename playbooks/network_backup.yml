@@ -37,6 +37,7 @@
       ansible.builtin.file:
         path: /backup/
         state: directory
+      become: yes
       delegate_to: backup-server
       run_once: true
 
